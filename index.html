@@ -3,24 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <h1>RPS Showdown</h1>
-    </header>
-    <div id="scoreboard">
-        <h2>Score</h2>
-        <p>Player: 0</p>
-        <p>Computer: 0</p>
+    <div class="content">
+
+        <div class="content-left">
+            <header class="header">
+                <img class="logo" src="assets/logo.png" alt="">
+            </header>
+            <div id="scoreboard">
+                <h2>Score</h2>
+                <div id="scores">
+                    <div class="player-score-container">
+                        <p id="player-score-text">Player: </p>
+                        <p id="player-score">0</p>
+                    </div>
+                    <div class="computer-score-container">
+                        <p id="computer-score-text">Computer: </p>
+                        <p id="computer-score">0</p>
+                    </div>
+                </div>
+            </div>
+            <div id="result"></div>
+        </div>
+        <div id="game">
+            <div id="computer-selection">
+            </div>
+            <div id="computer-image">
+                <img id="computer-rock" src="assets/computer-rock.png" alt="computer rock image">
+            <img id="computer-paper" src="assets/computer-paper.png" alt="">
+            <img id="computer-scissors" src="assets/computer-scissors.png" alt="">
+        </div>
+        <div id="player-image">
+            <img id="player-rock" src="assets/rock.png" alt="player rock image">
+            <img id="player-paper" src="assets/paper.png" alt="">
+            <img id="player-scissors" src="assets/scissors.png" alt="">
+        </div>
+        <div id="player-selection">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+        </div>
     </div>
-    <div id="computer-selection">
-    </div>
-    <div id="player-selection">
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
-    </div>
-    <script src="index.js"></script>
+</div>
+        <script src="index.js"></script>
 </body>
 </html>

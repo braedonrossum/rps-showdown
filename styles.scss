@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+button {
+    appearance: none;
+    border: none;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.logo {
+    width: 500px
+}
+
+.content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+
+
+#game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+#scoreboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    & #scores {
+        display: flex;
+        justify-content: space-around;
+        width: 300px;
+        margin: 20px auto;
+        align-items: center;
+    }
+}
+
+#rock {
+    background-color: #ffdc74;
+}
+
+#paper {
+    background-color: #d0d1ff;
+}
+
+#scissors {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #9ad4a4;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+    }
+}
+#rock {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #ffdc74;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+    }
+}
+#paper{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #d0d1ff;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+    }
+}
+
+#computer-rock, #computer-paper, #computer-scissors, #player-rock, #player-paper, #player-scissors {
+    display: none;
+    width: 200px;
+}
+
+#computer-image, #player-image {
+    display: flex;
+    justify-content: space-around;  /* Or any alignment you prefer */
+    align-items: center;
+    width: 100%;
+    height: 300px; /* or any size that suits your design */
+}
+
+#computer-image img, #player-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+h1{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+// /* CSS */
+// #scissors {
+//   appearance: none;
+//   background-color: #9ad4a4;
+//   border: 2px solid #7DCE82;
+//   border-radius: 15px;
+//   box-sizing: border-box;
+//   color: #FFFFFF;
+//   cursor: pointer;
+//   display: inline-block;
+//   font-size: 16px;
+//   font-weight: 600;
+//   line-height: normal;
+//   margin: 0;
+//   min-height: 40px;
+//   min-width: 0;
+//   outline: none;
+//   padding: 16px 24px;
+//   text-align: center;
+//   text-decoration: none;
+//   transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+//   user-select: none;
+//   -webkit-user-select: none;
+//   touch-action: manipulation;
+//   width: 100%;
+//   will-change: transform;
+// }
+
+// #scissors:disabled {
+//   pointer-events: none;
+// }
+
+// #scissors:hover {
+//   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+//   transform: translateY(-2px);
+// }
+
+// #scissors:active {
+//   box-shadow: none;
+//   transform: translateY(0);
+// }
